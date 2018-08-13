@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create League</title>
+</head>
+<body style="background-color:#ffffcc">
+
+ <form action="CreateLeague2" method="post" name="form4"> 
+ <tr><td align="center"><h1>
+Create League
+</h1></td></tr>    
+    <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">Enter League Name<br>
+          </td>
+          <td valign="top"><input name="lName" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+      
+     <tr>
+          <td align="right" valign="top">Enter League Rules<br>
+          </td>
+          <td valign="top"><input name="lRules" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        
+    <tr>
+          <td align="right" valign="top">Enter Match Rules<br>
+          </td>
+          <td valign="top"><input name="mRules" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+       
+     <tr>
+          <td align="right" valign="top">Enter Type(Indoor/Outdoor)<br>
+          </td>
+          <td valign="top"><input name="lType" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+      <tr>
+          <td align="right" valign="top">Enter Minimum Teams<br>
+          </td>
+          <td valign="top"><input name="minteams" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">Enter Maximum Teams<br>
+          </td>
+          <td valign="top"><input name="maxTeams" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">Enter Minimum  Members<br>
+          </td>
+          <td valign="top"><input name="minMembers" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">Enter Maximum  Members<br>
+          </td>
+          <td valign="top"><input name="maxMembers" type="text"> </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        
+        
+      <td align="right" valign="top"><input name ="Create" value="Create" type="submit">
+         
+          </td>
+    
+     
+     
+     
+       
+        
+        
+         
+       
+         
+     
+        
+
+</body>
+</html>

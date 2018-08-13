@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<movieList>
+	<movie id="101">
+		<name>mingyang</name>
+		<genres>jiao</genres>
+		<ratings>3</ratings>
+		<theater>abc</theater>
+		<showTime>100000</showTime>
+		<theaterAddress>athens</theaterAddress>
+		<description>bla</description>
+	</movie>
+	<movie id="102">
+		<name>ddfdfd</name>
+		<genres>dfasfa</genres>
+		<ratings>3</ratings>
+		<theater>dddd</theater>
+		<showTime>100000</showTime>
+		<theaterAddress>athens</theaterAddress>
+		<description>dfdsa</description>
+	</movie>
+</movieList>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sports_Page</title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <div align="center">
+      <div align="left"><br>
+        <table border="0" cellpadding="2" cellspacing="2" height="74"
+          width="572">
+          <tbody>
+            <tr>
+              <td colspan="6" bgcolor="#ffcccc" valign="top">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+                  <font color="#663366"><em>RecDawgs</em></font></h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6" rowspan="1" align="right" valign="top">Logged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                in as <i><font color="#3333ff">Robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="Logout">Logout</a></font></i><br>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        value="Submit" name="Submit"
+                        style="font-size:15px"> Sports </button></font></font></b></td>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        style="font-size:15px">Leagues</button></font></font></b></td>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        style="font-size:15px">Summary</button></font></font></b></td>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        style="font-size:15px">Venues</button><br>
+                      <br>
+                    </font></font></b></td>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        style="font-size:15px">Update</button><br>
+                      <br>
+                    </font></font></b></td>
+              <td valign="top"><b><font size="+1"><font color="#663366"><button
+                        style="font-size:15px">Contact</button><br>
+                      <br>
+                    </font></font></b></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </div>
+    <br>
+    Sport Name: <font color="#ff0000">Basketball</font><br>
+    <br>
+    Teams Registered:<br>
+    <br>
+    <a href="http://Team%20A" target="_blank">Team A</a><br>
+    <a href="http://Team%20B" target="_blank">Team B</a><br>
+    <a href="http://Team%20C" target="_blank">Team C</a><br>
+    <a href="http://Team%20D" target="_blank">Team D</a><br>
+    <a href="http://Team%20E" target="_blank">Team E</a><br>
+    <a href="http://Team%20F" target="_blank">Team F</a><br>
+    <a href="http://Team%20G" target="_blank">Team G</a><br>
+    <br>
+    <br>
+    <div align="left"><input value="New Team" type="button">                        <input value="Back" type="button"> <br></div>
+  
+</body></html>

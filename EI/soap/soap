@@ -1,0 +1,1 @@
+In this project, you will implement a simple SOAP-based web service, which utilizes two other, already existing SOAP-based services. The two services to be used are StockQuotes and CurrencyConvertor. Both are available at http://www.webservicex.com/. This project will allow you to get “hands on” experience with SOAP-based web services.

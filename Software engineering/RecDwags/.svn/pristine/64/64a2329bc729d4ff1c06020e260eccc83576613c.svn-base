@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Team HomePage</title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <table border="0" cellpadding="2" cellspacing="2" height="346"
+      width="843">
+      <tbody>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td colspan="6" rowspan="1" bgcolor="#ffcccc" valign="top">
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+              <em><font color="#663366">RecDawgs</font></em></h2>
+            <h3> </h3>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td colspan="3" rowspan="1" align="right" valign="top"><br>
+            <br>
+            
+
+
+
+
+
+
+
+                <a href="Logout">Logout</a><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnLeague">Leagues</button></font></font></b></td>
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font
+                size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnSummary">Summary</button>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnVenue">Venues</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnTeam">Team</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnContact">Contact</button><br>
+                  <br>
+                </font></font></b></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td> <b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnCreateTeam">Create
+                    Team</button></font></font></b> <br>
+          </td>
+          <td><br>
+            Click this to create a new Team</td>
+        </tr>
+        <tr>
+          <td> <br>
+          </td>
+          <td><input name="txtTeamName" type="text"> <br>
+          </td>
+          <td><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnSearchTeam">Search
+                    Team</button></font></font></b> <br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnEditTeam"> Edit Team</button>&nbsp;
+
+
+
+
+
+
+                </font></font></b><br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnDeleteTeam"> Delete
+                    Team</button></font></font></b><br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnJoinTeam"> Join Team</button></font></font></b><br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnLeaveTeam"> Leave
+                    Team</button></font></font></b><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px" name="btnGetLeagues"> Get
+                    Leagues</button></font></font></b><br>
+          </td>
+          <td>Click this to get the list of all leagues</td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td colspan="4">Create team and Delete team will be active for
+            administrators.</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td colspan="4">Join team and Leave team will be active for
+            students.</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </body>
+</html>

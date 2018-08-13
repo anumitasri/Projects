@@ -1,0 +1,781 @@
+package javaapplication5;
+
+
+/**
+ *
+ * @author anumitasrivastava
+ */
+
+import java.util.*;
+public class GAlgorithms {
+    String[] mPlus = {"1","1","0","1","1","0","1","1","0","0"};
+    int chromosomeLength = 25;
+    int crossoverPoint=5;
+    
+    double[][] C = new double[][]
+    { {0.611104586446241,
+ 0.421137300981738,
+ 0.148175838472404,
+ 0.0930937775844213,
+ 0.528511285562306,
+ 0.418664735471208,
+ 0.501390139340139,
+ 0.0220668804934560,
+ 0.103546871386257,
+ 0.633455719162457,
+ 0.265081894707438,
+ 0.451747787861036,
+ 0.329214309495508,
+ 0.602490020265100,
+ 0.662946576095627,
+ 0.441624060478818,
+ 0.371196058751641,
+ 0.0840838766117040,
+ 0.589799898951221,
+ 0.185696710453227,
+ 0.0345117445264532,
+ 0.302195180813873,
+ 0.278790488037649,
+ 0.0318989716618783,
+ 0.697455223508857
+    },
+            {
+ 0.00000000000001,
+ 0.126780289284317,
+ 0.744394666396265,
+ 0.482358260304834,
+ 0.757190046253237,
+ 0.00000000000001,
+ 0.982900393187488,
+ 0.00000000000001,
+ 0.428819183459887,
+ 0.341336134514462,
+ 0.248345721628678,
+ 0.340234421352034,
+ 0.00000000000001,
+ 0.505015205827083,
+ 0.844733492864637,
+ 0.00000000000001,
+ 0.520242556240523,
+ 0.839144273120511,
+ 0.944768680699528,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.911173674702260,
+ 0.968524970099574,
+ 0.513269178808326,
+ 0.00000000000001
+            },
+            {
+ 0.719522104002313,
+ 0.904803048309313,
+ 0.00000000000001,
+ 0.438443555235138,
+ 0.619019934264487,
+ 0.770586941750062,
+ 0.0350699136196961,
+ 0.284726902509447,
+ 0.00000000000001,
+ 0.900156225962637,
+ 0.00000000000001,
+ 0.614178016136483,
+ 0.756121646964979,
+ 0.00000000000001,
+ 0.482162641120219,
+ 0.346972852175577,
+ 0.00000000000001,
+ 0.530160101843141,
+ 0.607970985867070,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.707760220257454,
+ 0.630313049364050,
+ 0.537430321116666,
+ 0.429637914723548},
+            {
+ 0.965552324413113,
+ 0.237316538690271,
+ 0.00000000000001,
+ 0.675540671998421,
+ 0.0224544899642721,
+ 0.00000000000001,
+ 0.906837512695621,
+ 0.0468654693322561,
+ 0.985370941453320,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.581136158938117,
+ 0.00000000000001,
+ 0.731418151283366,
+ 0.410065655321845,
+ 0.185012434695387,
+ 0.810102943242575,
+ 0.0618346277912309,
+ 0.760408343170028,
+ 0.528443369794843,
+ 0.106327037842165,
+ 0.764641700668559,
+ 0.00000000000001,
+ 0.241043197103330,
+ 0.138591667701766
+            },
+            {
+
+ 0.785265388332897,
+ 0.245375910888135,
+ 0.00382511271341942,
+ 0.392088166154962,
+ 0.746347628881385,
+ 0.00000000000001,
+ 0.865455277201466,
+ 0.00000000000001,
+ 0.320064791627258,
+ 0.469631124040871,
+ 0.275800621265453,
+ 0.226402945456283,
+ 0.196849125063442,
+ 0.376723100141028,
+ 0.00000000000001,
+ 0.504222038436784,
+ 0.252534766799088,
+ 0.00000000000001,
+ 0.108825925788295,
+ 0.0388546479115517,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.837990168872285,
+ 0.233463217613037,
+ 0.973794244217591},
+            {
+
+ 0.00000000000001,
+ 0.369290246800189,
+ 0.391632501683958,
+ 0.966710703431960,
+ 0.456646601416472,
+ 0.744378786880699,
+ 0.500206874450765,
+ 0.429575160811457,
+ 0.415757700063175,
+ 0.682093426902822,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.885188230259897,
+ 0.545062518001098,
+ 0.844007008636374,
+ 0.209436674234195,
+ 0.532083535349035,
+ 0.643254912292238,
+ 0.0222069663099046,
+ 0.972272974891715,
+ 0.207677119042574,
+ 0.619557286435532,
+ 0.684530832657838,
+ 0.0397688141277846,
+ 0.566273215490521},
+            {
+ 0.719277708660475,
+ 0.370218185880323,
+ 0.00000000000001,
+ 0.528553715687503,
+ 0.00000000000001,
+ 0.474043295473812,
+ 0.644709558526384,
+ 0.0960429711714587,
+ 0.0786662963585305,
+ 0.667435054512431,
+ 0.440727478564124,
+ 0.859297226583258,
+ 0.181656889702034,
+ 0.0682778260988546,
+ 0.289860387002053,
+ 0.208112415023200,
+ 0.626884284721168,
+ 0.295818382080560,
+ 0.756532710863525,
+ 0.00000000000001,
+ 0.470774563248630,
+ 0.560703247115343,
+ 0.0400896393880665,
+ 0.00000000000001,
+ 0.910059572621276
+},
+            {
+
+ 0.350135065312560,
+ 0.250992265646808,
+ 0.00000000000001,
+ 0.762270072830035,
+ 0.649714245763474,
+ 0.382709691479201,
+ 0.00000000000001,
+ 0.434548143499786,
+ 0.0968995034214573,
+ 0.221095403759319,
+ 0.207416989005831,
+ 0.00000000000001,
+ 0.142452936220194,
+ 0.0635634367650205,
+ 0.519824117664166,
+ 0.318727424051020,
+ 0.0336315641336290,
+ 0.345351480108384,
+ 0.00000000000001,
+ 0.0503351036693599,
+ 0.00000000000001,
+ 0.0856470880497466,
+ 0.00000000000001,
+ 0.970307046068044,
+ 0.489823430539027},
+            {
+ 0.549077624710778,
+ 0.786267574311359,
+ 0.310947618592040,
+ 0.00000000000001,
+ 0.855403200655898,
+ 0.356727854049172,
+ 0.448585796844487,
+ 0.858197183282206,
+ 0.164926857298672,
+ 0.632894281126975,
+ 0.883520503008515,
+ 0.477562448697892,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.0544507275589047,
+ 0.581420284501007,
+ 0.405555966499055,
+ 0.00000000000001,
+ 0.595676983518376,
+ 0.581284627123403,
+ 0.294128392960005,
+ 0.00000000000001,
+ 0.0228404258484209,
+ 0.442097112742298,
+ 0.168690247074091
+},
+            {
+
+ 0.773515516786610,
+ 0.667867115544093,
+ 0.00000000000001,
+ 0.384918608416300,
+ 0.495617590609760,
+ 0.960445903223216,
+ 0.00000000000001,
+ 0.521981670764266,
+ 0.582565936996865,
+ 0.000392406713400225,
+ 0.729931753934329,
+ 0.00364876724949515,
+ 0.00000000000001,
+ 0.959536543562792,
+ 0.308279485119637,
+ 0.00000000000001,
+ 0.992524155877775,
+ 0.0780621292433059,
+ 0.00000000000001,
+ 0.425848147098836,
+ 0.00000000000001,
+ 0.146881857489646,
+ 0.488967009116414,
+ 0.914247178432647,
+ 0.556155216207800
+},
+            {
+
+ 0.205892579725893,
+ 0.113521907997095,
+ 0.215750666435692,
+ 0.241288747285162,
+ 0.803876238318103,
+ 0.00000000000001,
+ 0.219172738128888,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.560754999313855,
+ 0.00000000000001,
+ 0.480321025699527,
+ 0.218641469822564,
+ 0.00000000000001,
+ 0.756257474774615,
+ 0.991485939822852,
+ 0.795855094583638,
+ 0.947866607433123,
+ 0.642933671196426,
+ 0.988902985578823,
+ 0.00000000000001,
+ 0.00000000000001,
+ 0.865736295872245,
+ 0.745107082531372,
+ 0.125387318956380
+}};
+
+    String[] symptomSet = new String[] 
+{"0111011111",
+"1111111111",
+"1001100101",
+"1111111011",
+"1111101111",
+"0100111110",
+"1111110101",
+"0110111110",
+"1011111110",
+"1101111111",
+"1001011110",
+"1111010111",
+"0101111001",
+"1011111010",
+"1110111111",
+"0111111101",
+"1011111111",
+"1110111011",
+"1111110101",
+"0011101111",
+"0010110100",
+"1110111010",
+"1101110111",
+"1111101111",
+"0111111111"
+};
+            String[] binaryPopulation = new String[150];
+        ArrayList<String> arr = new ArrayList<String>();
+
+    public void createPopulation()
+    {
+        double[] L_1;
+        double[] L_2;
+        double[] L_3;
+        double[] fitnessValues = new double[150];
+        Random rnd = new Random();
+        int[] decimalPopulation = new int[150];
+        
+        for (int i = 0; i < 150; i++) {
+            //decimalPopulation[i] = Integer.toString(rnd.nextInt(33554432) + 1);
+            decimalPopulation[i] = rnd.nextInt(33554432) + 1;
+        }
+        
+        binaryPopulation = convertDecimaltoBinary(decimalPopulation);     
+        makingTwentyFiveBit(binaryPopulation);
+        
+        for (int i = 0; i < 30; i++) {      
+        
+            L_1 = L_One(binaryPopulation);
+            L_2 = L_Two(binaryPopulation);
+            L_3 = L_Three(binaryPopulation);        
+
+            fitnessValues = calculateFitnessForeachChromosome(L_1, L_2, L_3);
+            findingSelectionProbforRoulette(fitnessValues);
+            
+            for (int j = 0; j < 150; j++) {
+                binaryPopulation[j] = arr.get(j);
+            }
+            
+            System.out.println("Last Array");
+            for (int k = 0; k < arr.size(); k++) {
+                System.out.println(arr.get(k));
+            }
+            
+            arr.removeAll(arr);
+            
+            
+        }
+    }
+    
+    public void findingSelectionProbforRoulette(double[] fitnessValues)
+    {
+        double sum = 0.0;
+        double[] probabilites = new double[150];
+       
+        for (int i = 0; i < 150; i++) {
+            sum = sum + fitnessValues[i];
+        }
+        
+        for (int i = 0; i < 150; i++) {
+            probabilites[i] = fitnessValues[i] / sum;
+        }
+        
+//        for (int i = 0; i < probabilites.length; i++) {
+//            System.out.println(probabilites[i]);
+//        }
+        cumulativeProbabilityForRoulette(probabilites);
+    }
+    
+    public void cumulativeProbabilityForRoulette(double[] selectionProbabilities)
+    {
+        double[] cumulativeValues = new double[150];
+        cumulativeValues[0] = selectionProbabilities[0];
+        for (int i = 1; i < selectionProbabilities.length; i++) {
+            cumulativeValues[i] = cumulativeValues[i-1] + selectionProbabilities[i];
+        }       
+        
+        rouletteWheelSelection(cumulativeValues);       
+    }
+    
+    public void rouletteWheelSelection(double[] cumulativeOnes)
+    {
+        double[] rouletteWheelResults = new double[150];
+        String[] newIndividiuals = new String[150];
+        double temp = 0;
+        for (int i = 0; i < 150; i++) {
+            rouletteWheelResults[i] = Math.random();            
+        }
+                
+//        for (int i = 0; i < rouletteWheelResults.length; i++) {
+//            System.out.println(rouletteWheelResults[i]);
+//        }
+//        
+        //System.out.println("Cumulative Ones");
+//        
+//        for (int i = 0; i < cumulativeOnes.length; i++) {
+//            System.out.println(cumulativeOnes[i]);
+//        }
+        
+        for (int i = 0; i < rouletteWheelResults.length; i++) {
+            temp = 0;
+            for (int j = 0; j < cumulativeOnes.length; j++) {
+                if(rouletteWheelResults[i] > temp && rouletteWheelResults[i] < cumulativeOnes[j])
+                {
+                    newIndividiuals[i] = binaryPopulation[j];
+                    temp = cumulativeOnes[j];
+                    break;
+                }
+                else 
+                    temp = cumulativeOnes[j];
+            }
+        }
+               
+//        System.out.println("New Ones");
+//        for (int i = 0; i < newIndividiuals.length; i++) {
+//            //if (newIndividiuals[i] == null)                
+//                System.out.println(newIndividiuals[i]);
+//        }
+       /// for (int i = 0; i < 150; i++) {
+          //  arr.add(newIndividiuals[i]);
+        //}
+        pairOperation(newIndividiuals);
+        
+       // pairOperation(arr);
+    }
+
+    public void pairOperation(String[] newIndividuals)
+    {
+        Random rnd = new Random();
+        String chromosomeOne = "";
+        String chromosomeTwo = "";
+        int rndNumber1 = rnd.nextInt(149);
+        int rndNumber2 = rnd.nextInt(149);
+               
+        int crossoverProb = 0;
+        
+        for (int i = 0; i < 75; i++) {
+            rndNumber1 = rnd.nextInt(149);
+            rndNumber2 = rnd.nextInt(149);
+            chromosomeOne = newIndividuals[rndNumber1];
+            chromosomeTwo = newIndividuals[rndNumber2];
+            if((rndNumber1 != rndNumber2) && chromosomeOne != chromosomeTwo)
+            {                
+                //if(chromosomeOne == chromosomeTwo)
+                    
+                crossoverProb = rnd.nextInt(10);
+                if(crossoverProb <= 6)
+                    //onePointCrossover(chromosomeOne, chromosomeTwo, newIndividuals);
+                    twoPointCrossover(chromosomeOne, chromosomeTwo, newIndividuals);
+
+                else
+                {
+                    i--;
+                }
+                
+            }
+            else
+            {
+                rndNumber1 = rnd.nextInt(149);
+                rndNumber2 = rnd.nextInt(149);
+                i--;
+            }        
+        }     
+    }
+    
+    public void twoPointCrossover(String chromosomeOne, String chromosomeTwo, String[] newIndividuals)
+    {
+        Random rnd = new Random();
+        int pivotOne = rnd.nextInt(24);
+        int pivotTwo = rnd.nextInt(24);
+        int temp = 0;
+        if(pivotOne > pivotTwo)
+        {
+            temp = pivotOne;
+            pivotOne = pivotTwo;
+            pivotTwo = temp;
+        }
+        
+        int t=0;
+        int mutProb = 0;
+        
+        chromosomeOne = chromosomeOne.replace(chromosomeOne.substring(pivotOne, pivotTwo), chromosomeTwo.substring(pivotOne, pivotTwo));
+        chromosomeTwo = chromosomeTwo.replace(chromosomeTwo.substring(pivotOne, pivotTwo), chromosomeOne.substring(pivotOne, pivotTwo));
+        arr.add(chromosomeOne);
+        arr.add(chromosomeTwo);
+     
+        if(arr.size() == 150)
+        {            
+            for (int i = 0; i < 150; i++) {
+                mutProb = rnd.nextInt(1000);
+                if(mutProb < 3)
+                {
+                    arr.set(i, doMutation(arr.get(i)));
+                }
+            }  
+           
+            for (int i = 0; i < 150; i++) {
+                newIndividuals[i] = arr.get(i);
+            }           
+        }      
+    }    
+    public void onePointCrossover(String chromosomeOne, String chromosomeTwo, String[] newIndividuals)
+    {
+        Random rnd = new Random();
+        int pivot = rnd.nextInt(24);
+        int t=0;
+        int mutProb = 0;
+        
+        chromosomeOne = chromosomeOne.replace(chromosomeOne.substring(pivot, 24), chromosomeTwo.substring(pivot, 24));
+        chromosomeTwo = chromosomeTwo.replace(chromosomeTwo.substring(pivot, 24), chromosomeOne.substring(pivot, 24));
+        arr.add(chromosomeOne);
+        arr.add(chromosomeTwo);
+        
+        
+       // System.out.println(chromosomeOne +", "+ chromosomeTwo);
+        
+        if(arr.size() == 150)
+        {            
+            for (int i = 0; i < 150; i++) {
+                mutProb = rnd.nextInt(1000);
+                if(mutProb < 3)
+                {
+                    arr.set(i, doMutation(arr.get(i)));
+                }
+            }  
+           
+            for (int i = 0; i < 150; i++) {
+                newIndividuals[i] = arr.get(i);
+            }           
+        }      
+    }
+    
+    public String doMutation(String mutChromosome)
+    {
+        Random rnd = new Random();
+        int startRandom = rnd.nextInt(24);
+        int endRandom = rnd.nextInt(24);
+        
+        for (int i = startRandom; i < endRandom; i++) {
+            if(mutChromosome.charAt(i) == '1')
+                mutChromosome = mutChromosome.replace(mutChromosome.charAt(i), '0');
+            else
+                mutChromosome = mutChromosome.replace(mutChromosome.charAt(i), '1');
+        }      
+        
+        return mutChromosome;
+    }
+    
+    
+    public double[] calculateFitnessForeachChromosome(double[] L_1, double[] L_2, double[] L_3)
+    {
+        double[] fitnessValues = new double[150];
+        for (int i = 0; i < 150; i++) {
+            fitnessValues[i] = L_1[i] * L_2[i] * L_3[i];
+        }
+        
+//        for (int i = 0; i < 150; i++) {
+//            System.out.println(fitnessValues[i]);
+//        }
+        return fitnessValues;
+    }
+    
+    /**
+     * Converting decimal numbers to binary.
+     * @param decimalPopulation
+     * @return 
+     */
+    public String[] convertDecimaltoBinary(int[] decimalPopulation)
+    {
+        String[] binaryPopulation = new String[150];
+        for (int i = 0; i < decimalPopulation.length; i++) {
+             binaryPopulation[i] = Integer.toBinaryString(decimalPopulation[i]);
+        }
+        return binaryPopulation;
+    }
+    
+    /**
+     * I completed the size of bits to 10.
+     * @param binaryPopulation
+     */
+    public void makingTwentyFiveBit(String[] binaryPopulation)
+    {        
+        int addingValue = 0;
+        for (int i = 0; i < binaryPopulation.length; i++) {          
+            binaryPopulation[i] = leftPad(binaryPopulation[i], 25, '0');           
+        }
+        
+//        for (int i = 0; i < binaryPopulation.length; i++) {
+//            System.out.println(binaryPopulation[i]);
+//        }
+    }
+    
+    public static String leftPad(String originalString, int length,
+         char padCharacter) {
+      String paddedString = originalString;
+      while (paddedString.length() < length) {
+         paddedString = padCharacter + paddedString;
+      }
+      return paddedString;
+   }
+    
+    public double[] L_One(String[] binaryPopulation)
+    {
+        double[] L_oneValues = new double[150];
+        for (int i = 0; i < 150; i++) {
+            L_oneValues[i] = L_One_Second(binaryPopulation[i]);
+        }
+        
+//        for (int i = 0; i < L_oneValues.length; i++) {
+//            System.out.println(L_oneValues[i]);
+//        }
+        
+        return L_oneValues;
+    }
+    
+    public double L_One_Second(String binaryChromosome)
+    {
+        double mProduct = 1.0;        
+        for (int i = 1; i < 11; i++) {            
+            if(mPlus[i-1].equals("1"))
+            {
+                mProduct = mProduct*(1-dProd(binaryChromosome, i-1, mProduct));
+            }
+        }
+        return mProduct;      
+    }
+    
+    public double dProd(String binaryChromosome, int j, double dProduct)
+    {
+        //represents 25 bit string in binary population
+        for (int i = 0; i < 25; i++) {                    
+            if(binaryChromosome.charAt(i) == '1'){
+                dProduct = dProduct*(1-C[j][i]);
+            }
+        }
+        
+        return dProduct;
+    }
+    
+    /**
+     * First L2
+     * @param binaryPopulation
+     */
+    public double[] L_Two(String[] binaryPopulation)
+    {
+        double[] L_twoValues = new double[150];
+        for (int i = 0; i < binaryPopulation.length; i++) {
+            L_twoValues[i] = effectsForEachChromosome(binaryPopulation[i]);
+        }
+        
+//        for (int i = 0; i < L_twoValues.length; i++) {
+//            System.out.println(L_twoValues[i]);
+//        }
+        
+        return L_twoValues;
+    }
+    
+    /**
+     * Second L2
+     * Calculating L2 values for each chromosome. 
+     * We have 150 chromosome.
+     * 
+     * @param binaryChromosome
+     * @return 
+     */
+    public double effectsForEachChromosome(String binaryChromosome)
+    {
+        double temp = 1.0;
+        for (int j = 0; j < 25; j++) {
+            if (bitEffect(binaryChromosome.charAt(j))) {
+                temp = effects(symptomSet[j], j, temp);               
+            }
+        }
+        return temp;
+    }
+    
+    
+    public double effects(String symptom, int index, double temp)
+    {
+        for (int i = 0; i < 10; i++) {
+            if(mPlus[i].equals("0") && symptom.charAt(i) == '1')
+            {
+                temp = temp*(1-C[i][index]);                
+            }
+        }        
+        return temp;
+    }  
+    
+    public boolean bitEffect(char bit)
+    {
+        return bit == '1';
+    }  
+    
+    public double[] L_Three(String[] binaryPopulation)
+    {
+        double[] L_threeValues = new double[150];
+        for (int i = 0; i < binaryPopulation.length; i++) {
+            L_threeValues[i] = L_Three_Outer_Part(binaryPopulation[i]);        
+        }
+        
+//        for (int i = 0; i < L_threeValues.length; i++) {
+//            System.out.println(L_threeValues[i]);
+//        }
+        
+        return L_threeValues;
+    }
+    
+    /**
+     * Calculating prior probabilities.
+     * @return 
+     */
+    public double[] L_Three_InnerPart()
+    {
+        double[] prob = new double[25];        
+        
+        for (int i = 0; i < 25; i++) {
+            prob[i] = (C[0][i] / (1-C[0][i]));
+        }
+ 
+        return prob;
+    }
+    
+    public double L_Three_Outer_Part(String binaryChromosome)
+    {
+        double[] prob = L_Three_InnerPart();
+        double probProduct = 1.0;
+        for (int i = 0; i < 25; i++) {
+            if(binaryChromosome.charAt(i) == '1')
+            {             
+                probProduct = probProduct * prob[i];                    
+            }
+        }   
+        return probProduct;
+    }
+    
+//    public void calculateFitnessValues()
+//    {
+//        L_1 = L_One(binaryPopulation);
+//        L_2 = 
+//    }
+    
+   
+    
+    }
+    
+
+

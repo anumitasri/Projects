@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>UserHomePage</title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <table border="0" cellpadding="2" cellspacing="2" height="328"
+      width="567">
+      <tbody>
+        <tr>
+          <td colspan="6" rowspan="1" bgcolor="#ffcccc" valign="top">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+              <font color="#663366"><em><big>RecDawgs</big></em></font></h3>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td colspan="5" rowspan="1" align="right" valign="top">Logged
+            in as user : <font color="#3333ff"><i>Robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Logout">Logout</a></i></font><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    value="Submit" name="Submit" style="font-size:18px">
+                    Sports </button></font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Leagues</button></font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Summary</button></font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Venues</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Update</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Contact</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" rowspan="5" valign="top"><font color="#663366"><b>List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                of Sports</b></font><br>
+            <font size="-1">Click on any link to view sports information<br>
+              <br>
+            </font> <a href="Basketball">Basketball</a><br>
+            <a href="Volleyball">Volleyball</a><br>
+            <a href="Football">Football</a><br>
+            <a href="Swimming">Swimming</a><br>
+            <a href="Tennis">Tennis</a><br>
+            <a href="Running">Running</a><br>
+            <a href="Gymnastics">Gymnastics</a><br>
+            <a href="Soccer">Soccer</a><br>
+            <a href="Polo">Polo</a><br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </body>
+</html>

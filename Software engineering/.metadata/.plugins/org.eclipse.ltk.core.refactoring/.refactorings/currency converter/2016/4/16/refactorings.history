@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;currency.java&apos; to &apos;CurrencyConverter/src/currency&apos;&#x0A;- Original project: &apos;currency converter&apos;&#x0A;- Destination element: &apos;CurrencyConverter/src/currency&apos;&#x0A;- Original element: &apos;currency.java&apos;" description="Copy compilation unit" destination="=CurrencyConverter/src&lt;currency" element1="/src&lt;{currency.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1460816230386" units="1" version="1.0"/>
+</session>

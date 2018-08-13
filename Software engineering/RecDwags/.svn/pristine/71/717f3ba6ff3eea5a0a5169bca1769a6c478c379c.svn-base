@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Summary_TeamRankings</title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <table border="0" cellpadding="2" cellspacing="2" height="282"
+      width="723">
+      <tbody>
+        <tr>
+          <td colspan="7" rowspan="1" bgcolor="#ffcccc" valign="top">
+            <h2><b><font color="#663366"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+                    RecDawgs</em></font></b></h2>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td colspan="6" rowspan="1" align="right" bgcolor="#ffffcc"
+            valign="top">Logged in as: <font color="#3333ff"><i>Robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Logout">Logout</a></i></font><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><button
+              style="font-size:15px">Sports</button></td>
+          <td bgcolor="#ffffcc" valign="top"><button
+              style="font-size:15px">Leagues</button> </td>
+          <td bgcolor="#ffffcc" valign="top"><button
+              style="font-size:18px">Summary</button></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Venues</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Update</button><br>
+                  <br>
+                </font></font></b></td>
+          <td bgcolor="#ffffcc" valign="top"><button
+              style="font-size:15px">Contact</button></td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td colspan="2" rowspan="1" bgcolor="#ffffcc" valign="top">Team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Rankings<br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><b><a
+                href="Team%20Rankings">Team Rankings</a></b><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top">
+            <select>
+              <option selected="selected" value="basketball">Basketball</option>
+              <option value="football">Football</option>
+              <option value="running">Running</option>
+              <option value="simming">Swimming</option>
+            </select>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><a
+              href="team%20cumulative%20scores">Team Cumulative Scores</a><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top">1. Team C<br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><a href="Ongoing%20leagues">Ongoing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Leagues</a><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top">2. Team F<br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><a href="Ongoing%20matches">Ongoing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Matches</a><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top">3. Team D<br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top">4. Team A<br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+          <td bgcolor="#ffffcc" valign="top"><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </body>
+</html>

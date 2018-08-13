@@ -1,0 +1,22 @@
+Project 2: RESTful Web Service Design
+Due: February 10, 2017
+
+Maximum grade: 20 points
+
+In this project, you will be working in teams of three students. Each team will have a unique number.
+
+IMPORTANT: I require all students on each team to equally participate in the project.
+
+Create a RESTful Web Service, called MoviePick, which should provide operations to view information about movies being currently played in Athens and rate them.  At the very least, MoviePick should offer the movie listings, including the title, the theater name and its address, as well as the show times.  However, I expect that the service will also offer operations to list movies by genres (e.g., drama, comedy, action, etc.) and viewer ratings (e.g., list only the best movies).  Searching should be provided, as well.  The service should also list movies by theater.  The movie rating should be on the scale of 1 (lowest) to 5 (highest).  If you wish, you may also add some other interesting or useful information of your choice (perhaps, a review from a known movie critic?).  Furthermore, you should also provide operations to add, update, and delete short movie descriptions (however, you may simply pre-load the service with movie data).
+
+The service must be implemented as a RESTful Web Service. You should design the service’s URIs and decide what each HTTP method does on each defined URI.  Carefully consider the URI patterns and what resources they represent – this is a critical part of this project!  It is up to you to decide how to obtain the data for your service (e.g., using websites, such as flagpole.com, imdb.com, onlineathens.com, etc.), however, the data should be reasonably realistic.  You may use either XML or JSON (or both) as the formats of resource representations.
+
+Your service should be deployed on our JBoss Wildfly installation on uml.cs.uga.edu.  As a data store, should you need one, you may use the mysql server, available on uml, as well (please, let me know and I will create a database for your team).
+
+Provide a file called UserGuide.txt (a PDF file is acceptable, as well) describing the API for your service.  The guide should include the description of all resources and all operations (HTTP methods) available on your service, how to invoke them, and what they do.  Include a table including the URI templates for all resources, what HTTP methods are legal on the resources, and what they accomplish.  Include allowed/required representations, as well.
+
+Create a client program, using JAX-RS client API, which should illustrate the capabilities of your service by retrieving and printing some resources, updating and printing them, and then deleting them.  The client should also provide voting on select movies and retrieving movies by rating.  
+
+If you do not preload the data for movies, theaters, etc., you must create one more client to initially create resources for movies, theaters, genres, etc.  This client should be called Loader.java.
+
+Provide an ant build file.  Include an INSTALL.txt file detailing how to compile and install your service and the client(s). 

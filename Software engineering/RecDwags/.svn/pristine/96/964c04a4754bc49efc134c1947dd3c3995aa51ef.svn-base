@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Update_Details</title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </b><br>
+    <div alink="#EE0000" bgcolor="#ffffcc" link="#0000EE" text="#000000"
+      vlink="#551A8B">
+      <div align="center">
+        <div align="left"> <br>
+          <table border="0" cellpadding="2" cellspacing="2" height="132"
+            width="575">
+            <tbody>
+              <tr>
+                <td colspan="7" rowspan="1" bgcolor="#ffcccc"
+                  valign="top">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+                    <font color="#663366"><em><big>RecDawgs</big></em></font></h3>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+                <td colspan="5" rowspan="1" align="right" valign="top"><font
+                    color="#330033">&nbsp;Logged in&nbsp; as </font><font
+                    color="#3333ff"><i>Robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="Logout">Logout</a></i></font><br>
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><br>
+                </td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button value="Submit"
+                          name="Submit" style="font-size:15px"> Sports </button></font></font></b></td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button style="font-size:15px">Leagues</button></font></font></b></td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button style="font-size:15px">Summary</button></font></font></b></td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button style="font-size:15px">Venues</button><br>
+                        <br>
+                      </font></font></b></td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button style="font-size:18px">Update</button><br>
+                        <br>
+                      </font></font></b></td>
+                <td valign="top"><b><font size="+1"><font
+                        color="#663366"><button style="font-size:15px">Contact</button><br>
+                        <br>
+                      </font></font></b></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <font color="#663366"><b>Update Details<br>
+            </b></font></div>
+        <br>
+        <div align="left">
+          <table border="0" cellpadding="2" cellspacing="2" height="178"
+            width="257">
+            <tbody>
+              <tr>
+                <td valign="top"><font color="#663366"><b>Email:</b></font><br>
+                </td>
+                <td valign="top"><input type="text"><br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><font color="#663366"><b>Contact:</b></font><br>
+                </td>
+                <td valign="top"><input type="text"><br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><font color="#663366"><b>Address:</b></font><br>
+                </td>
+                <td valign="top"><input type="text"><br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><br>
+                </td>
+                <td valign="top"><input type="text"><br>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><br>
+                </td>
+                <td valign="top"><br>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <button>Submit</button> &nbsp;&nbsp; <button>Cancel</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <form action="http://update_details" target="_blank"
+            onsubmit='try {return window.confirm("You are submitting
+            information to an external page.\nAre you sure?");} catch
+            (e) {return false;}'> <br>
+            <br>
+            <br>
+          </form>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

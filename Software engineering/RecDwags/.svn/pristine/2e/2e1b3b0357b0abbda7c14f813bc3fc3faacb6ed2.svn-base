@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Leagues page-details </title>
+  </head>
+  <body style="background-color:#ffffcc">
+    <table border="0" cellpadding="2" cellspacing="2" height="364"
+      width="608">
+      <tbody>
+        <tr>
+          <td colspan="6" rowspan="1" bgcolor="#ffcccc" valign="top">
+            <h2><b><font color="#663366"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    RecDawgs</em></font></b></h2>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td colspan="3" align="right" valign="top">Logged in as <font
+              color="#3333ff"><i>Robert&nbsp;&nbsp;&nbsp;&nbsp; <a
+                  href="Logout">Logout</a></i></font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    value="Submit" name="Submit" style="font-size:15px">
+                    Sports</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:18px">Leagues</button></font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Summary</button></font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Venues</button><br>
+                  <br>
+                </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Update</button> &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </font></font></b></td>
+          <td valign="top"><b><font size="+1"><font color="#663366"><button
+                    style="font-size:15px">Contact</button><br>
+                  <br>
+                </font></font></b></td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><b><u><i><font color="#663366">Leagues</font></i></u></b><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><b>Football</b><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top"><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><br>
+          </td>
+          <td colspan="3" valign="top">
+            <table border="1" cellpadding="2" cellspacing="2"
+              height="112" width="338">
+              <tbody>
+                <tr>
+                  <td valign="top"><font color="#663366"><b>Number</b></font><br>
+                  </td>
+                  <td valign="top"><font color="#663366"><b>Name</b></font><br>
+                  </td>
+                  <td valign="top"><font color="#663366"><b>Status</b></font><br>
+                  </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                  <td valign="top">1. <br>
+                  </td>
+                  <td valign="top">Knights of the Gridron<br>
+                  </td>
+                  <td valign="top">Active<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">2.<br>
+                  </td>
+                  <td valign="top">Clash of the Tight Ends<br>
+                  </td>
+                  <td valign="top">Active<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </body>
+</html>
